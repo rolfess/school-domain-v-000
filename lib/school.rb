@@ -20,9 +20,8 @@ class School
   end
 
   def sort
-   @roster.each do|key, value|
-    binding.pry
-    value.sort
-   end
+    @roster.each do|key, value|
+     key.sort{|a,b| a <=> b}
+    end
    end
 end
