@@ -20,7 +20,7 @@ class School
   end
 
   def sort
-   school.each do|key, value|
+   School.each do|key, value|
     binding.pry
     value.sort
    end
